@@ -1,0 +1,79 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="SK6805_EFM32GG" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="DS18B20_EFM32GG" radix="16" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="SK6805_EFM32GG" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="DS18B20_EFM32GG" radix="16" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="SK6805_EFM32GG" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="DS18B20_EFM32GG" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="SK6805_EFM32GG" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="DS18B20_EFM32GG" radix="16" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="DS18B20_EFM32GG"/>
+  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG"/>
+  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files"/>
+  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files;DS18B20"/>
+  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;System Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="SK6805_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;TIMER3/CTRL;TIMER3/CMD;TIMER3/STATUS;TIMER3/IEN;TIMER3/IF;TIMER3/IFS;TIMER3/IFC;TIMER3/TOP;TIMER3/TOPB;TIMER3/CNT;TIMER3/ROUTE;TIMER3/CC0_CTRL;TIMER3/CC0_CCV;TIMER3/CC0_CCVP;TIMER3/CC0_CCVB;TIMER3/CC1_CTRL;TIMER3/CC1_CCV;TIMER3/CC1_CCVP;TIMER3/CC1_CCVB;TIMER3/CC2_CTRL;TIMER3/CC2_CCV;TIMER3/CC2_CCVP;TIMER3/CC2_CCVB;TIMER3/DTCTRL;TIMER3/DTTIME;TIMER3/DTFC;TIMER3/DTOGEN;TIMER3/DTFAULT;TIMER3/DTFAULTC;TIMER3/DTLOCK" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;CPU;TIMER3/CNT" name="DS18B20_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="SK6805_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="DS18B20_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="SK6805_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="DS18B20_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="SK6805_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="DS18B20_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint numelements="0" expression="SystemHFXOClock" evalMode="0" name="SystemHFXOClock" radix="10" linenumber="66" filename="system_efm32gg.c" list=""/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="72" y="172" useTextEdit="1" useBinaryEdit="0" left="0" path="main.c" debugPath="main.c" selected="1" top="144" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.h" debugPath="ds18b20/ds18b20.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="61" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.c" debugPath="ds18b20/ds18b20.c" selected="0" top="61" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="72" useTextEdit="1" useBinaryEdit="0" left="0" path="../SK6805_EFM32GG/main.c" debugPath="../SK6805_EFM32GG/main.c" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="109" useTextEdit="1" useBinaryEdit="0" left="0" path="system_efm32gg.c" debugPath="system_efm32gg.c" selected="0" top="94" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" useBinaryEdit="0" left="0" path="EFM32GGxxx_Startup.s" debugPath="EFM32GGxxx_Startup.s" selected="0" top="0" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="630" useTextEdit="1" useBinaryEdit="0" left="0" path="emlib/inc/em_gpio.h" debugPath="emlib/inc/em_gpio.h" selected="0" top="590" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="82" useTextEdit="1" useBinaryEdit="0" left="0" path="EFM32GGxxx/CMSIS/Device/Include/efm32gg_gpio.h" debugPath="EFM32GGxxx/CMSIS/Device/Include/efm32gg_gpio.h" selected="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="265" useTextEdit="1" useBinaryEdit="0" left="0" path="emlib/src/em_gpio.c" debugPath="emlib/src/em_gpio.c" selected="0" top="265" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="DS18B20_EFM32GG" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="E:/PCAD/DS18B20_EFM32GG/emlib/src" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>

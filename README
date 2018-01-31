@@ -1,0 +1,16 @@
+Translated for you by google Translator:
+
+This simple program for the temperature sensor DS18B20 running on the EFM32GG-STK3700.
+I did not write it myself adapted Davide Gironi, here from here:
+http://davidegironi.blogspot.ru/2014/09/a-ds18b20-1-wire-digital-thermometer.html#.WnHy-4jFK0q
+
+The PC6 foot is used, it is conveniently located on the pin connector next to the power and ground
+
+
+The original message in Russian in UTF-8 encoding:
+
+Эта простая прогамма для датчика температуры DS18B20 работающая на EFM32GG-STK3700.
+Я её не писал сам а адаптировал написанную Davide Gironi, вот от сюда:
+http://davidegironi.blogspot.ru/2014/09/a-ds18b20-1-wire-digital-thermometer.html#.WnHy-4jFK0q
+
+используется ножка PC6, она удобно расположена на штырьковом разёме рядом с питанием и землёй
