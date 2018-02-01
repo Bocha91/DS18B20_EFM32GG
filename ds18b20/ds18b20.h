@@ -38,7 +38,7 @@ References:
 #define DS18B20_CMD_ALARMSEARCH 0xec
 
 //stop any interrupt on read
-#define DS18B20_STOPINTERRUPTONREAD 1
+//#define DS18B20_STOPINTERRUPTONREAD 1
 
 //functions
 extern double ds18b20_gettemp();

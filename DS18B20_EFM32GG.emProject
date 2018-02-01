@@ -155,6 +155,10 @@
       <file file_name="emlib/src/em_vdac.c" />
       <file file_name="emlib/src/em_wdog.c" />
     </folder>
+    <folder Name="Drivers">
+      <file file_name="Drivers/segmentlcd.c" />
+      <file file_name="Drivers/rtcdriver.c" />
+    </folder>
   </project>
   <configuration
     Name="Debug"
@@ -173,5 +177,5 @@
     gcc_optimization_level="Level 1" />
   <configuration
     Name="Common"
-    c_system_include_directories="$(SolutionDir)/emlib/inc;$(StudioDir)/include;$(PackagesDir)/include" />
+    c_system_include_directories="$(SolutionDir)/emlib/inc;$(SolutionDir)/Drivers;$(StudioDir)/include;$(PackagesDir)/include" />
 </solution>

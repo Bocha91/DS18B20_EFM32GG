@@ -27,6 +27,7 @@
  <Project>
   <ProjectSessionItem path="DS18B20_EFM32GG"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG"/>
+  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Drivers"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files;DS18B20"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;System Files"/>
@@ -65,15 +66,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="72" y="172" useTextEdit="1" useBinaryEdit="0" left="0" path="main.c" debugPath="main.c" selected="1" top="144" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.h" debugPath="ds18b20/ds18b20.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="61" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.c" debugPath="ds18b20/ds18b20.c" selected="0" top="61" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="72" useTextEdit="1" useBinaryEdit="0" left="0" path="../SK6805_EFM32GG/main.c" debugPath="../SK6805_EFM32GG/main.c" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="109" useTextEdit="1" useBinaryEdit="0" left="0" path="system_efm32gg.c" debugPath="system_efm32gg.c" selected="0" top="94" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" useBinaryEdit="0" left="0" path="EFM32GGxxx_Startup.s" debugPath="EFM32GGxxx_Startup.s" selected="0" top="0" codecName=""/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="630" useTextEdit="1" useBinaryEdit="0" left="0" path="emlib/inc/em_gpio.h" debugPath="emlib/inc/em_gpio.h" selected="0" top="590" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="82" useTextEdit="1" useBinaryEdit="0" left="0" path="EFM32GGxxx/CMSIS/Device/Include/efm32gg_gpio.h" debugPath="EFM32GGxxx/CMSIS/Device/Include/efm32gg_gpio.h" selected="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="265" useTextEdit="1" useBinaryEdit="0" left="0" path="emlib/src/em_gpio.c" debugPath="emlib/src/em_gpio.c" selected="0" top="265" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="217" useTextEdit="1" useBinaryEdit="0" left="0" path="main.c" debugPath="main.c" selected="1" top="182" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" useBinaryEdit="0" left="0" path="Drivers/segmentlcd.h" debugPath="Drivers/segmentlcd.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="113" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.c" debugPath="ds18b20/ds18b20.c" selected="0" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.h" debugPath="ds18b20/ds18b20.h" selected="0" top="0" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="DS18B20_EFM32GG" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="E:/PCAD/DS18B20_EFM32GG/emlib/src" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="DS18B20_EFM32GG" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="E:/PCAD/DS18B20_EFM32GG/emlib/src" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
