@@ -159,6 +159,19 @@ void _delay_ms(int ms) {
   for (; ms; --ms)
     _delay_us(1000);
 }
+
+volatile uint32_t interval = 10;
+void gpioCallback(uint8_t pin)
+{
+  if (pin == 9) {
+    //BSP_LedToggle(1);
+    if(++interval>9999) interval=9999;
+  } else if (pin == 10) {
+    if(--interval<=0) interval=1;
+    //BSP_LedToggle(0);
+  }
+}
+
 /***************************************************************************//**
  * @brief Setup GPIO interrupt to change temp. display
  ******************************************************************************/
@@ -167,9 +180,16 @@ void gpioSetup(void)
   /* Enable GPIO in CMU */
   CMU_ClockEnable(cmuClock_GPIO, true);
 
+  /* Initialize GPIO interrupt dispatcher */
+//  GPIOINT_Init();
+
   /* Configure PB9 and PB10 as input */
   GPIO_PinModeSet(gpioPortB, 9, gpioModeInput, 0);
   GPIO_PinModeSet(gpioPortB, 10, gpioModeInput, 0);
+
+  /* Register callbacks before setting up and enabling pin interrupt. */
+  GPIOINT_CallbackRegister(9,  gpioCallback);
+  GPIOINT_CallbackRegister(10, gpioCallback);
 
   /* Set falling edge interrupt for both ports */
   GPIO_IntConfig(gpioPortB, 9, false, true, true);
@@ -181,9 +201,13 @@ void gpioSetup(void)
 
   NVIC_ClearPendingIRQ(GPIO_ODD_IRQn);
   NVIC_EnableIRQ(GPIO_ODD_IRQn);
+
 }
 
+
+
 volatile uint32_t *DWT_CYCCNT = (uint32_t *)0xE0001004;
+
 
 int main(void) {
   char printbuff[100];
@@ -219,7 +243,7 @@ int main(void) {
   for (;;) {
     d = ds18b20_gettemp();
 
-    printf("%8.2f\n", d, d);
+    printf("%8.2f\n", d);
 
     //_delay_ms(500);
 
@@ -232,11 +256,12 @@ int main(void) {
     SegmentLCD_Symbol(LCD_SYMBOL_DP10, 1);
     SegmentLCD_Symbol(LCD_SYMBOL_DEGC, 0);
     SegmentLCD_Symbol(LCD_SYMBOL_DEGF, 1);
+    SegmentLCD_Number(interval);
 
     SegmentLCD_Write(printbuff);
 
     /* Sleep for 2 seconds in EM 2 */
-    RTCDRV_StartTimer(xTimerForWakeUp, rtcdrvTimerTypeOneshot, 2000, NULL, NULL);
+    RTCDRV_StartTimer(xTimerForWakeUp, rtcdrvTimerTypeOneshot, interval*1000, NULL, NULL);
     EMU_EnterEM2(true);
   }
   return 0;

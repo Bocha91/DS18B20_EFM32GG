@@ -52,7 +52,21 @@
     </folder>
     <folder Name="Source Files">
       <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
-      <file file_name="main.c" />
+      <file file_name="main.c">
+        <configuration
+          Name="Release"
+          arm_compiler_variant="clang"
+          gcc_optimization_level="None"
+          link_time_optimization="No" />
+        <configuration
+          Name="Common"
+          arm_compiler_variant="clang"
+          gcc_c_language_standard="c17"
+          gcc_cplusplus_language_standard="c++17" />
+        <configuration
+          Name="Debug"
+          gcc_optimization_level="Level 2 balanced" />
+      </file>
       <folder Name="DS18B20">
         <file file_name="ds18b20/ds18b20.c" />
         <file file_name="ds18b20/ds18b20.h" />
@@ -158,6 +172,7 @@
     <folder Name="Drivers">
       <file file_name="Drivers/segmentlcd.c" />
       <file file_name="Drivers/rtcdriver.c" />
+      <file file_name="Drivers/gpiointerrupt.c" />
     </folder>
   </project>
   <configuration
