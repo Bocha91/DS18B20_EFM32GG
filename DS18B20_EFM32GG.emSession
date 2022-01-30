@@ -27,11 +27,8 @@
  <Project>
   <ProjectSessionItem path="DS18B20_EFM32GG"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG"/>
-  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Drivers"/>
-  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;emlib"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files"/>
   <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;Source Files;DS18B20"/>
-  <ProjectSessionItem path="DS18B20_EFM32GG;DS18B20_EFM32GG;System Files"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="SK6805_EFM32GG" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -70,14 +67,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="211" useTextEdit="1" openedFrom="E:/PCAD/DS18B20_EFM32GG/ds18b20/ds18b20.c" useBinaryEdit="0" left="0" path="main.c" selected="1" top="153" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Drivers/segmentlcd.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.c" selected="0" top="40" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="21" useTextEdit="1" openedFrom="E:/PCAD/DS18B20_EFM32GG/ds18b20/ds18b20.c" useBinaryEdit="0" left="0" path="ds18b20/ds18b20.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="611" useTextEdit="1" openedFrom="E:/PCAD/DS18B20_EFM32GG/main.c" useBinaryEdit="0" left="0" path="Drivers/segmentlcd.c" selected="0" top="585" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="2" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Drivers/rtcdriver.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="18" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Drivers/gpiointerrupt.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Output/Release/Obj/DS18B20_EFM32GG/main.bc" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="254" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="193" codecName="UTF-8"/>
  </Files>
- <ARMCrossStudioWindow activeProject="DS18B20_EFM32GG" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="E:/PCAD/DS18B20_EFM32GG/Drivers" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="DS18B20_EFM32GG" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="E:/PCAD/SK6805_EFM32GG" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

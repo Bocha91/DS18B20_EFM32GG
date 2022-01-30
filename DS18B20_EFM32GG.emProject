@@ -189,7 +189,8 @@
     c_preprocessor_definitions="NDEBUG;EFM32_HFXO_FREQ=(48000000UL)"
     gcc_debugging_level="None"
     gcc_omit_frame_pointer="Yes"
-    gcc_optimization_level="Level 1" />
+    gcc_optimization_level="Level 1"
+    linker_printf_fp_enabled="Double" />
   <configuration
     Name="Common"
     c_system_include_directories="$(SolutionDir)/emlib/inc;$(SolutionDir)/Drivers;$(StudioDir)/include;$(PackagesDir)/include" />

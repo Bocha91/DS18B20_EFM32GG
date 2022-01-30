@@ -1,3 +1,4 @@
+﻿// UTF-8
 /*********************************************************************
 *               SEGGER MICROCONTROLLER GmbH & Co. KG                 *
 *       Solutions for real time microcontroller applications         *
@@ -71,14 +72,14 @@ void init(void) {
   CHIP_Init();
 
   MSC->READCTRL =
-      //                  MSC_READCTRL_MODE_WS2SCBTP  // 2 oaeoa caaa??ee e ?ac?aoaiea i?aaauai?ee aey iaieo aaoaae ia?aoiaa
-      MSC_READCTRL_MODE_WS2          // 2 oaeoa caaa??ee aac ?ac?aoaiea i?aaauai?ee aey iaieo aaoaae ia?aoiaa
-      | MSC_READCTRL_AIDIS           // cai?ao aaoiiaoe?aneiai na?ina eaoa eiiaia i?e caiene ai oeao
-                                     //                | MSC_READCTRL_PREFETCH       // ?ac?aoeou iia?a?a?uaa ?oaiea
-                                     //                | MSC_READCTRL_RAMCEN         // ?ac?aoeou eaoe?iaaiea eiiaia a RAM
-      | MSC_READCTRL_BUSSTRATEGY_DMA // o AIA i?ei?eoao ia?auiey e iao?eoa oei
-                                     //                | MSC_READCTRL_BUSSTRATEGY_CPU  // o CPU i?ei?eoao ia?auiey e iao?eoa oei
-      | MSC_READCTRL_IFCDIS          //Ioee??eou eyo eiiaia aey aioo?aiiae oeyo-iaiyoe
+      //                  MSC_READCTRL_MODE_WS2SCBTP  // 2 такта задержки и разрешение предвыборки для обоих ветвей перехода
+      MSC_READCTRL_MODE_WS2          // 2 такта задержки без разрешение предвыборки для обоих ветвей переход
+      | MSC_READCTRL_AIDIS           // запрет автоматического сброса кеша команд при записи во флеш
+                                     //                | MSC_READCTRL_PREFETCH       // разрешить опережающее чтение
+                                     //                | MSC_READCTRL_RAMCEN         // разрешить кеширование команд в RAM
+      | MSC_READCTRL_BUSSTRATEGY_DMA // у ДМА приоритет обращния к матрице шин
+                                     //                | MSC_READCTRL_BUSSTRATEGY_CPU  // у CPU приоритет обращния к матрице шин
+      | MSC_READCTRL_IFCDIS          //Отключить кэш команд для внутренней флэш-памяти
       ;
 
   //SystemHFXOClock = EFM32_HFXO_FREQ;
@@ -186,6 +187,13 @@ void gpioSetup(void)
   /* Configure PB9 and PB10 as input */
   GPIO_PinModeSet(gpioPortB, 9, gpioModeInput, 0);
   GPIO_PinModeSet(gpioPortB, 10, gpioModeInput, 0);
+  
+  if( !(GPIO_PinInGet(gpioPortB,9) && GPIO_PinInGet(gpioPortB,10)) ) 
+  {
+    GPIO_PinModeSet(gpioPortE, 3, gpioModePushPull, 0);
+    GPIO_PinOutSet(gpioPortE, 3);
+  }
+
 
   /* Register callbacks before setting up and enabling pin interrupt. */
   GPIOINT_CallbackRegister(9,  gpioCallback);
@@ -218,6 +226,7 @@ int main(void) {
   /* Enable clock for GPIO module */
   CMU_ClockEnable(cmuClock_GPIO, true);
 
+
   GPIO_PinModeSet(DS18B20_PORT, DS18B20_DQ, gpioModeWiredAnd, 1);
   setupTimerB();
 
@@ -242,22 +251,22 @@ int main(void) {
 #endif
   for (;;) {
     d = ds18b20_gettemp();
-
-    printf("%8.2f\n", d);
-
-    //_delay_ms(500);
-
+    
+    /***** подгон моего личного дптчика под температуру из под мышки ****/
+    d+=0.15;
+    /***** для другого датчика другие надо ставить цыфры ****/
+    
+    //printf("%8.2f\n", d);
+    
     /* Show Celsius on alphanumeric part of display */
     i = (int)(d * 10);
-    snprintf(printbuff, 8, "%2d,%1d%%C", (i / 10), abs(i % 10));
+    snprintf(printbuff, 8, "%+2d,%1d%%C", (i / 10), abs(i % 10));
     /* Show Fahrenheit on numeric part of display */
     //i = (int)(convertToFahrenheit(temp) * 10);
-    //SegmentLCD_Number(i * 10);
+    SegmentLCD_Number(interval);
     SegmentLCD_Symbol(LCD_SYMBOL_DP10, 1);
     SegmentLCD_Symbol(LCD_SYMBOL_DEGC, 0);
     SegmentLCD_Symbol(LCD_SYMBOL_DEGF, 1);
-    SegmentLCD_Number(interval);
-
     SegmentLCD_Write(printbuff);
 
     /* Sleep for 2 seconds in EM 2 */
